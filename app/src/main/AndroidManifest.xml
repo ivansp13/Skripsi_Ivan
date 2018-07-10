@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_logoapp"
-        android:label="2D Object Detector and Counter"
+        android:label="2D Object Detector"
         android:roundIcon="@mipmap/ic_logoapp_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">

@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="151" />
+                                                <entry key="scalingPercent" value="78" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -33,10 +33,12 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="E:\LAPTOP_HP\#DATA_E\Galeri DESAIN\BAHAN_SKRIPSI_ANDROID\buat_logoapp.png" />
-                                      <entry key="foregroundLayerName" value="ic_launcher_foreground" />
-                                      <entry key="outputName" value="ic_logoapp" />
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="4fa68b" />
+                                      <entry key="backgroundLayerName" value="ic_kamera_back" />
+                                      <entry key="foregroundImage" value="E:\LAPTOP_HP\#DATA_E\Galeri DESAIN\BAHAN_SKRIPSI_ANDROID\flat-camera-circle.png" />
+                                      <entry key="foregroundLayerName" value="ic_kamera_fore" />
+                                      <entry key="outputName" value="ic_kamera" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -50,6 +52,11 @@
                 </map>
               </option>
             </PersistentState>
+          </value>
+        </entry>
+        <entry key="vectorWizard">
+          <value>
+            <PersistentState />
           </value>
         </entry>
       </map>

@@ -3,4 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="Abu">#cccccc</color>
+    <color name="ic_kamera_back">#4FA68B</color>
 </resources>
