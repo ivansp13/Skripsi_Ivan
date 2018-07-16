@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity_Kamera" />
+        <activity android:name=".Activity_Galeri" />
+        <activity android:name=".Activity_Metode" />
+        <activity android:name=".Activity_Tentang"></activity>
     </application>
 
 </manifest>
