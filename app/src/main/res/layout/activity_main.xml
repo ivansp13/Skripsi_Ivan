@@ -21,7 +21,7 @@
             app:title="2D Object Detector"
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleMarginEnd="64dp"
-            android:background="@drawable/bokeh_back">
+            android:background="@drawable/object">
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"

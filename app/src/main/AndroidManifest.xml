@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_logoapp_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".Activity_Kamera" />
         <activity android:name=".Activity_Galeri" />
         <activity android:name=".Activity_Metode" />
-        <activity android:name=".Activity_Tentang"></activity>
+        <activity android:name=".Activity_Tentang" />
     </application>
 
 </manifest>
