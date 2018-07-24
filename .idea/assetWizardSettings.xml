@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="78" />
+                                                <entry key="scalingPercent" value="65" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -35,10 +35,10 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="4fa68b" />
-                                      <entry key="backgroundLayerName" value="ic_kamera_back" />
-                                      <entry key="foregroundImage" value="E:\LAPTOP_HP\#DATA_E\Galeri DESAIN\BAHAN_SKRIPSI_ANDROID\flat-camera-circle.png" />
-                                      <entry key="foregroundLayerName" value="ic_kamera_fore" />
-                                      <entry key="outputName" value="ic_kamera" />
+                                      <entry key="backgroundLayerName" value="ic_tentang_back" />
+                                      <entry key="foregroundImage" value="G:\BAHAN_SKRIPSI_ANDROID\personnel.png" />
+                                      <entry key="foregroundLayerName" value="ic_tentang_fore" />
+                                      <entry key="outputName" value="ic_tentang" />
                                     </map>
                                   </option>
                                 </PersistentState>

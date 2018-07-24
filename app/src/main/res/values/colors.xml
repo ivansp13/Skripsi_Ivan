@@ -3,6 +3,10 @@
     <color name="colorPrimary">#FFC107</color>
     <color name="colorPrimaryDark">#FFA000</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="OrenMuda">#FFC107</color>
+    <color name="OrenTua">#FFA000</color>
+    <color name="pink">#FF4081</color>
     <color name="Abu">#939191</color>
     <color name="AbuMuda">#bababa</color>
     <color name="ic_kamera_back">#4FA68B</color>

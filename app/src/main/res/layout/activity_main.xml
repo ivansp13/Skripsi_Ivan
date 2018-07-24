@@ -21,7 +21,7 @@
             app:title="2D Object Detector"
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleMarginEnd="64dp"
-            android:background="@drawable/object">
+            android:background="@drawable/geo_background">
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
@@ -115,7 +115,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:padding="8dp"
-                            android:src="@mipmap/ic_logoapp_round" />
+                            android:src="@mipmap/ic_galeri" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -166,7 +166,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:padding="8dp"
-                            android:src="@mipmap/ic_kamera_round" />
+                            android:src="@mipmap/ic_metode" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -211,7 +211,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:padding="8dp"
-                            android:src="@mipmap/ic_logoapp_round" />
+                            android:src="@mipmap/ic_tentang" />
 
                         <TextView
                             android:layout_width="wrap_content"
