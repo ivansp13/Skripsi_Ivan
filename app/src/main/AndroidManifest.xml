@@ -16,11 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Activity_Kamera" />
         <activity android:name=".Activity_Galeri" />
         <activity android:name=".Activity_Metode" />
         <activity android:name=".Activity_Tentang" />
+        <activity android:name=".Galeri_Activity2"></activity>
     </application>
 
 </manifest>
