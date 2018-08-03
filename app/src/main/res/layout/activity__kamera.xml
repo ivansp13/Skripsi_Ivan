@@ -38,7 +38,7 @@
             android:padding="10dp"
             android:text="Buka Kamera"/>
         <Button
-            android:id="@+id/ambil_gambar"
+            android:id="@+id/simpan_gambar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

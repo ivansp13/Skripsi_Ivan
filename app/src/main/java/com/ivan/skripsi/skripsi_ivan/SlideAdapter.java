@@ -25,17 +25,17 @@ public class SlideAdapter extends PagerAdapter {
     };
     //list of titles
     public String[] list_title = {
-            "IVAN",
-            "DAGO",
-            "STAGE",
-            "DINNER"
+            "IVAN S P",
+            "TEKNIK INFORMATIKA",
+            "SAINS DAN TEKNOLOGI",
+            "UIN SGD BANDUNG"
     };
     //list of description
     public String[] list_description ={
-            "Description 1",
-            "Description 2",
-            "Description 3",
-            "Description 4"
+            "adalah Seorang Mahasiswa yang sedang menyelesaikan tugas akhir yakni pembuatan aplikasi Android tentang deteksi citra 2 dimensi",
+            "adalah jurusan perkuliahan yang ditempuh untuk menguasai berbagai ilmu mengenai dunia komputer dan teknologi informasi",
+            "adalah sebuah fakultas Perguruan Tinggi yang didalamnya banyak mempelajari ilmu tentang Sains",
+            "adalah sebuah Universitas Islam Negeri di Bandung yang sangat populer dan memiliki nilai plus yang tinggi dimata masyarakat karena memiliki bobot agama"
     };
     //list of background colors
     public int[] list_backgroundcolor ={
