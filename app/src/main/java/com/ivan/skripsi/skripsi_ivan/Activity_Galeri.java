@@ -23,16 +23,6 @@ public class Activity_Galeri extends AppCompatActivity {
         listGaleri.add(new Galeri("Gatotkaca","Hero Tanker","Deskripsi Hero",R.drawable.gatotkaca));
         listGaleri.add(new Galeri("Irithel","Hero Marksman","Deskripsi Hero",R.drawable.irithel));
         listGaleri.add(new Galeri("Zilong","Hero Fighter/Assasin","Deskripsi Hero",R.drawable.zilong));
-        listGaleri.add(new Galeri("Roger","Hero Fighter","Deskripsi Hero",R.drawable.roger));
-        listGaleri.add(new Galeri("Layla","Hero Marksman","Deskripsi Hero",R.drawable.layla));
-        listGaleri.add(new Galeri("Gatotkaca","Hero Tanker","Deskripsi Hero",R.drawable.gatotkaca));
-        listGaleri.add(new Galeri("Irithel","Hero Marksman","Deskripsi Hero",R.drawable.irithel));
-        listGaleri.add(new Galeri("Zilong","Hero Fighter/Assasin","Deskripsi Hero",R.drawable.zilong));
-        listGaleri.add(new Galeri("Roger","Hero Fighter","Deskripsi Hero",R.drawable.roger));
-        listGaleri.add(new Galeri("Layla","Hero Marksman","Deskripsi Hero",R.drawable.layla));
-        listGaleri.add(new Galeri("Gatotkaca","Hero Tanker","Deskripsi Hero",R.drawable.gatotkaca));
-        listGaleri.add(new Galeri("Irithel","Hero Marksman","Deskripsi Hero",R.drawable.irithel));
-        listGaleri.add(new Galeri("Zilong","Hero Fighter/Assasin","Deskripsi Hero",R.drawable.zilong));
 
         RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerview_galeri);
         RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(this,listGaleri);
