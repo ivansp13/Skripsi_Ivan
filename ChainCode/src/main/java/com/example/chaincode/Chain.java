@@ -1,10 +1,11 @@
 package com.example.chaincode;
 
-import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
+
+import javax.imageio.ImageIO;
 
 public class Chain {
 
@@ -31,13 +32,12 @@ public class Chain {
     double perimeter;
     double area;
 
-    private Chain() throws IOException {
+    public Chain(String filename) throws IOException {
 
         // read input file -- membaca inputan yang kita masukan hanya berupa png.
-        System.out.println();
-        System.out.print("Filename: ");
-        String filename = "";
-        filename = Input.readString();
+        //System.out.println();
+        //System.out.print("Filename: ");
+        //filename = Input.readString();
         File shape = new File(filename);
         BufferedImage image = ImageIO.read(shape);
 
@@ -354,9 +354,10 @@ public class Chain {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String gamvar) throws IOException {
+        String gambar = gamvar;
 
-        Chain c = new Chain();
+        Chain c = new Chain(gambar);
 
         // get key coordinates
         c.firstPixel();
