@@ -86,14 +86,6 @@ public class Activity_Kamera extends Activity {
             }
         });
 
-        String gamvar = imageView.toString();
-        try {
-            Chain chain = new Chain(gamvar);
-            chain.main(gamvar);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
 
     }
 
@@ -104,7 +96,7 @@ public class Activity_Kamera extends Activity {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(Activity_Kamera.this);
         builder.setTitle("Add Photo!");
-        builder.setIcon(R.mipmap.ic_launcher);
+        builder.setIcon(R.mipmap.ic_kamera_round);
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int item) {
