@@ -6,4 +6,9 @@
     <string name="klik3">Rumus dan Cara Kerja Aplikasi</string>
     <string name="klik4">Tentang Pembuat Aplikasi</string>
     <string name="splashscreen">Selamat Datang di Aplikasi!</string>
+    <string name="penjelasan">Kode rantai (Chain Code) digunakan untuk merepresentasikan batas berdasarkan rangkaian yang terkoneksi dari segmen garis lurus dengan arah dan panjang tertentu.</string>
+    <string name="langkah">Pertama, buka aplikasi dan ambil gambar.
+    Kedua, gunakan tombol deteksi untuk menjalankan metode dalam aplikasi
+    Ketiga, bandingkan hasil dengan hitungan nyata
+    Keempat, simpan dan selesai</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.ivan.skripsi.skripsi_ivan;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -9,6 +10,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.StrictMode;
@@ -17,6 +19,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.io.ByteArrayInputStream;
@@ -35,10 +38,11 @@ public class Activity_Kamera extends Activity {
     ImageView imageView;
     TextView txtSatuanSatu, txtSatuanDua;
     Bitmap bitmap, decoded, bitmapGrayscale, bitmapBlack;
+    ProgressBar loadingBar;
     public final int REQUEST_CAMERA = 0;
     public final int SELECT_FILE = 1;
 
-    private ProgressDialog loading;
+    ProgressDialog loading;
 
     int bitmap_size = 40; // image quality 1 - 100;
     int max_resolution_image = 800;
@@ -48,12 +52,11 @@ public class Activity_Kamera extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__kamera);
 
-        loading = showProgressDialog( "Loading", "Processing Image");
-
         btn_choose_image = (Button) findViewById(R.id.btn_choose_image);
         btn_detect_image = (Button) findViewById(R.id.btn_detect_image);
         txtSatuanSatu = findViewById(R.id.txt_satuan_satu);
         txtSatuanDua = findViewById(R.id.txt_satuan_dua);
+        loadingBar = findViewById(R.id.loading_bar);
 
         imageView = (ImageView) findViewById(R.id.image_view);
 
@@ -65,27 +68,17 @@ public class Activity_Kamera extends Activity {
         });
 
         btn_detect_image.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("StaticFieldLeak")
             @Override
             public void onClick(View v) {
-                loading.show();
-                txtSatuanSatu.setText("Teks Pixel");
-                txtSatuanDua.setText("Teks Centimeter");
+                loadingBar.setVisibility(View.VISIBLE);
                 imageView.setImageBitmap(convertToBinary(decoded));
                 txtSatuanSatu.setText(Chain.mainMethod(convertToBinary(decoded))[0]+"\n"+Chain.mainMethod(convertToBinary(decoded))[1]);
                 txtSatuanDua.setText(Chain.mainMethod(convertToBinary(decoded))[2]+"\n"+Chain.mainMethod(convertToBinary(decoded))[3]);
-                loading.dismiss();
+                loadingBar.setVisibility(View.GONE);
             }
         });
 
-    }
-
-    public ProgressDialog showProgressDialog(String title, String message) {
-        ProgressDialog dialog = new ProgressDialog(this);
-        dialog.setTitle(title);
-        dialog.setMessage(message);
-        dialog.setCancelable(false);
-
-        return dialog;
     }
 
     public Bitmap convertToBinary(Bitmap src){
@@ -163,15 +156,18 @@ public class Activity_Kamera extends Activity {
 
                     bitmap = BitmapFactory.decodeFile(fileUri.getPath());
                     setToImageView(getResizedBitmap(bitmap, max_resolution_image));
-                } catch (Exception e) {
+                }
+                catch (Exception e) {
                     e.printStackTrace();
                 }
             } else if (requestCode == SELECT_FILE && data != null && data.getData() != null) {
                 try {
                     // mengambil gambar dari Gallery
+                    Log.e("GALERI", String.valueOf(Uri.parse(data.getData().toString())));
                     bitmap = MediaStore.Images.Media.getBitmap(Activity_Kamera.this.getContentResolver(), data.getData());
                     setToImageView(getResizedBitmap(bitmap, max_resolution_image));
-                } catch (IOException e) {
+                }
+                catch (IOException e) {
                     e.printStackTrace();
                 }
             }
@@ -213,7 +209,7 @@ public class Activity_Kamera extends Activity {
     private static File getOutputMediaFile() {
 
         // External sdcard location
-        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "DeKa");
+        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "2D-OD");
 
         // Create the storage directory if it does not exist
         if (!mediaStorageDir.exists()) {
@@ -232,5 +228,3 @@ public class Activity_Kamera extends Activity {
     }
 
 }
-
-

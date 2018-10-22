@@ -426,7 +426,7 @@ public class Chain {
             System.out.print("7 ");
             bn = bn + "7 ";
             perimeter += Math.sqrt(2); // keliling 1cm = 37.795pixels
-            area += -(i + 0.5);
+            area += -(i - 0.5);
         /* luas itu 0 dan y nya itu i, kalo x itu j
            supaya jadi cm maka di akhir harus di dibagi
           1cm2 = 37.795^2 pixels kuadrat */
@@ -567,7 +567,7 @@ public class Chain {
             j = j + 1;
             System.out.print("7 ");
             perimeter += Math.sqrt(2); // keliling 1cm = 37.795pixels
-            area += -(i + 0.5);
+            area += -(i - 0.5);
         /* luas itu 0 dan y nya itu i, kalo x itu j
            supaya jadi cm maka di akhir harus di dibagi
           1cm2 = 37.795^2 pixels kuadrat */
